@@ -23,6 +23,7 @@ function AppContent() {
 
     if (temp < 10) return "/cold.avif";
     if (temp > 30) return "/hot.webp";
+    console.log("API KEY FROM ENV:", import.meta.env.VITE_API_KEY);
 
     return "/default.avif";
   };
